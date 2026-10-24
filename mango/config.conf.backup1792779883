@@ -1,0 +1,30 @@
+env = LIBVA_DRIVER_NAME,nvidia
+env = GBM_BACKEND,nvidia-drm
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = NVD_BACKEND,direct
+
+exec_once = dms run
+exec_once = swaybg -c "#1e1e2e"
+
+blur=1
+shadows=1
+border_radius=12
+animations=1
+gap_outer_horizontal=15
+gap_outer_vertical=15
+gap_inner_horizontal=10
+gap_inner_vertical=10  
+
+monitor_rule=name:DP-1, width:2560, height:1440, refresh:165, x:0, y:0, scale:1.0
+
+bind=SUPER,E,spawn,nautilus
+bind=SUPER,D,spawn,rofi -show drun
+bind=ALT,F4,killclient
+bind=SUPER,T,spawn,kitty
+bind=SUPER,Left,focusdir,left
+bind=SUPER,Right,focusdir,right
+bind=SUPER,Up,focusdir,up
+bind=SUPER,Down,focusdir,down
+mousebind=SUPER,btn_left,moveresize,curmove
+mousebind=SUPER,btn_right,moveresize,curresize
+
