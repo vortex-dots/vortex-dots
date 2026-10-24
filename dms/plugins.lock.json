@@ -1,0 +1,14 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "a27b80ad8c3dd42da11af83461674fb362817515"
+    },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "7c6e34bfecf68f392da9a55330e0fb112eaabbfd"
+    }
+  }
+}
