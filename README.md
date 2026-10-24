@@ -1,5 +1,8 @@
 # vortex-_- Dotfiles
 
+[!CAUTION]
+**Important for AMD/Intel GPU users:** The default 'mango/config.conf' contains environment variables optimized for NVIDIA GPUs (the first 5 'env' lines). If you are using an AMD or Intel graphics card, you **must remove or comment out** these lines before starting MangoWM, otherwise you may experience a black screen or graphical glitches.
+
  My personal desktop configuration based on "Arch Linux", "MangoWM", and "DankMaterialShell(DMS)".
 
 ## Features
