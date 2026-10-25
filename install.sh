@@ -47,7 +47,7 @@ if lspci | grep -i -E 'vga|3d' | grep -qi 'nvidia', then
 else
     echo "AMD/Intel GPU detected. Removing NVIDIA-specific settings from config..."
     
-    sed -i '/^env = LIBVA_DRIVER_NAME,nvidia/d; /^env=GBM_BACKEND,nvidia-drm/d; /^env= __GLX_VENDOR_LIBRARY_NAME,nvidia/d; /^env = NVD_BACKEND,direct/d; /^env=QSG_RHI_BACKEND,vulkan/d' ~/.config/mango/config.conf
+    sed -i 'nvidia/d; /QSG_RHI_BACKEND/d' ~/.config/mango/config.conf
     echo "Config optimized for your GPU."
 fi
 
